@@ -109,18 +109,25 @@ body{
 
 }
 .about .about-content .box p{
-    margin-left: 45px;
+    margin-left: 0px;
+}
+.about .about-content .row {
+    align-items: center;
+}
+.about .about-content .col-2{
+    align-items: center;
+    display: initial;
+    font-size:45px;
+}
+.about .about-content .col-2 .fa-procedures{
+    margin: 0%;
 }
 
-.about .about-content .box .fa-procedures{
-    display: initial;
-    font-size:35px;
-}
 /* About Section Ends Here  */
 
 /******* Facility Section Start Here  *******/
 
-.facility {
+ .facility {
     padding-bottom: 50px;
 }
 .facility .heading {
@@ -131,6 +138,7 @@ body{
     padding: 0px;
     color: #407BFF;
 }
+/*
 .facility hr{
     width: 70px;
     border-width: 4px;
@@ -151,7 +159,39 @@ body{
 }
 .facility .box:hover img{
     transform: scale(1.2);
-}
+} */
+
+
+
+.facility{
+    min-height: 100vh;
+  }
+  
+  .facility .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 3rem;
+  }
+  
+  .facility .box-container .box{
+    height:30rem;
+    width:20rem;
+    margin:1rem;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .facility .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    transition: 1s;
+  }
+  
+  .facility .box-container .box:hover img{
+    transform: scale(1.3);
+  }
 /**** Facility Section Ends Here  *******/
 
 /****** Review Section Start Here  ******/
@@ -214,10 +254,10 @@ transition: all 0.5s ease;
 /****** Counter Section Starts Here  ******/
 .counter .box{
     text-align: center;
-    margin: 40px 0px;
+    margin: 30px 0px; 
 }
 .counter .box .fa-hospital,.fa-users,.fa-smile,.fa-procedures{
-    display: block;
+   display: block;
    margin: auto;
    font-size: 40px;
    color:#407BFF;
