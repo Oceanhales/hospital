@@ -127,9 +127,10 @@ body{
 
 /******* Facility Section Start Here  *******/
 
- .facility {
-    padding-bottom: 50px;
-}
+.facility{
+    min-height: 100vh;
+  }
+
 .facility .heading {
     text-align: center;
     font-weight: 650;
@@ -138,35 +139,6 @@ body{
     padding: 0px;
     color: #407BFF;
 }
-/*
-.facility hr{
-    width: 70px;
-    border-width: 4px;
-    border-color:#263238;
-    margin: auto;
-    border-radius: 2px;
-    padding: 3px 0px;
-    margin-top: 4px;
-
-}
-.facility .box{
-    margin-top: 10px;
-    overflow: hidden;
-    cursor: pointer;
-}
-.facility .box img{
-    transition: all 0.5s linear;
-}
-.facility .box:hover img{
-    transform: scale(1.2);
-} */
-
-
-
-.facility{
-    min-height: 100vh;
-  }
-  
   .facility .box-container{
     display: flex;
     justify-content: center;
