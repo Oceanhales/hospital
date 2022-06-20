@@ -255,6 +255,14 @@ transition: all 0.5s ease;
 .review .card .card-body span{
     font-size:14px ;
 }
+.review iframe { border: 0px; width: 100%; height: 350px; }
+
+.review .box{
+    align-items: center;
+    display: initial;
+    font-size:60px;
+    color: aliceblue;
+}
 /****** Review Section Ends Here  ******/
 
 /****** Counter Section Starts Here  ******/
