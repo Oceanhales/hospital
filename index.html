@@ -48,7 +48,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 wow bounceInUp">
-                    <img class="img-fluid mt-5" src="images/home img/personal2.png" alt="home">
+                    <img class="img-fluid mt-5" src="images/home img/dr.Swapna-Solo.png" alt="home">
                 </div>
                 <div class="col-md-6 wow bounceIn" data-wow-duration="2s">
                     <div class="content-area">
@@ -503,6 +503,37 @@
         </section>
     </footer>
     <!--------------- FOOTER AREA ENDS HERE  --------------->
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "107742141979228");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v14.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    
     <div class="to-top">
         <a href="#"><i class="fa fa-chevron-circle-up"></i></a>
     </div>
