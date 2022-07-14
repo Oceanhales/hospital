@@ -439,6 +439,7 @@ transition: all 0.5s ease;
 
 /* scroll button start here  */
 .to-top a{
+    align-items: flex-start;
     padding: 5px 10px;
     background:#407BFF;
     display: inline-block;
